@@ -54,7 +54,7 @@ RUN apt-get install apache2 libapache2-mod-php7.0 -y
 RUN apt-get install git composer nano tree vim curl ftp php7.0-mbstring default-jre -y
 RUN apt-get install -y openjdk-8-jre-headless xvfb libxi6 libgconf-2-4
 RUN apt-get update
-RUN apt-get install -y --install-recommends linux-generic-hwe-16.04
+RUN apt-get install -y --assume-yes --install-recommends linux-generic-hwe-16.04
 
 # Install MariaDB
 RUN \
